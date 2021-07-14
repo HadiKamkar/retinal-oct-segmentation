@@ -1,0 +1,206 @@
+body{
+  background-color: #636870;
+}
+html, body {
+  height: 100%;
+}
+
+.paragraph{
+  margin-left: 200px;
+  padding-top: 10px;
+ 
+}
+.inputbutt{
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#submit_form_button{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 90px;
+    border: black solid 3px;
+}
+    .button {
+      min-width: 300px;
+      min-height: 60px;
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      font-weight: 700;
+      color: #313133;
+      background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+      border: none;
+      border-radius: 1000px;
+      box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+      transition: all 0.3s ease-in-out 0s;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+      padding: 10px;
+      margin: 0 auto;
+      }
+    
+    button::before {
+    content: '';
+      border-radius: 1000px;
+      min-width: calc(300px + 12px);
+      min-height: calc(60px + 12px);
+      border: 6px solid #00FFCB;
+      box-shadow: 0 0 60px rgba(0,255,203,.64);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all .3s ease-in-out 0s;
+    }
+    
+    .button:hover, .button:focus {
+      color: #313133;
+      transform: translateY(-6px);
+    }
+    
+    button:hover::before, button:focus::before {
+      opacity: 1;
+    }
+    
+    button::after {
+      content: '';
+      width: 30px; height: 30px;
+      border-radius: 100%;
+      border: 6px solid #00FFCB;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: ring 1.5s infinite;
+    }
+    
+    button:hover::after, button:focus::after {
+      animation: none;
+      display: none;
+    }
+    
+    
+#submit_form_button{
+    width: 200px;
+    margin: 0 auto;
+    background-color: rgb(250, 164, 238);
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+
+  .emoji-smile {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: #ffd200;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: none;
+    margin-bottom: 200px;
+  }
+  .emoji-sad {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: #ffd200;
+    border-radius: 50%;
+    margin-left: 60%;
+    margin: 0 auto;
+    display: none;
+    margin-bottom: 200px;
+  }
+  
+  .face {
+    width: inherit;
+    height: inherit;
+  }
+  
+  .eyebrow-left {
+    position: absolute;
+    height: 20px;
+    width: 24px;
+    left: 27px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    border-top-color: black;
+    top: 25px;
+  }
+  
+  .eyebrow-right {
+    position: absolute;
+    height: 20px;
+    width: 24px;
+    right: 27px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    border-top-color: black;
+    top: 25px;
+  }
+  
+  .eye-left {
+    position: absolute;
+    width: 11px;
+    height: 12px;
+    background: black;
+    left: 33px;
+    top: 40px;
+    border-radius: 50%;
+  }
+  
+  .eye-right {
+    position: absolute;
+    width: 11px;
+    height: 12px;
+    background: black;
+    right: 33px;
+    top: 40px;
+    border-radius: 50%;
+  }
+  
+  .mouth-happy {
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    border: 6px solid transparent;
+    top: 12px;
+    left: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-bottom-color: black;
+  }
+  
+  .mouth-sad {
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    border: 6px solid transparent;
+    top: 70px;
+    left: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-top-color: black;
+  }
+  
